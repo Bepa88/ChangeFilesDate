@@ -10,13 +10,13 @@ namespace ChangeFilesDate
 {
     class SomeOptions
     {
-        [Option('p', "path", Default = ".")] //"$(pwd)" cd
+        [Option('p', "path", Default = ".")]
         public string Path { get; set; }
 
         [Option('f', "filter", Default = "*")]
         public string Filter { get; set; }
 
-        [Option('d', "date", Default = "not specified")]
+        [Option('d', "date", Default = null)]
         public string Date { get; set; }
     }
 }
